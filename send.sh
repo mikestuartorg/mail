@@ -1,0 +1,6 @@
+#curl -v http://wap05:9000/messages -F from=mistuart@corelogic.com -F to=mike@stuart.org,mwstuart@live.com -F cc=michaelwaynestuart@gmail.com,mistuart@corelogic.com -F subject='Hello' -F text='Testing it all' -F html='x' -F attachment=@file.pdf -F attachment=@/Users/mike/Documents/sample-agilealm-485734.pdf
+#curl -v http://wap05:9000/messages -F from=mistuart@corelogic.com -F to=mike@stuart.org -F to=mwstuart@live.com -F cc=michaelwaynestuart@gmail.com -F bcc=mistuart@corelogic.com -F subject='Hello' -F text='Testing it all' -F html='x' -F attachment=@file.pdf -F inline=@/Users/mike/Pictures/02298_rangersballparkinarlington_1440x900.jpg
+#curl -v http://wap05:9000/messages -F from=mistuart@corelogic.com -F to=mistuart@corelogic.com -F subject='Hello' -F html='x' -F inline=@/Users/mike/Pictures/02298_rangersballparkinarlington_1440x900.jpg
+
+curl -v http://wap05:9000/messages -F from=mistuart@corelogic.com -F to=mistuart@corelogic.com -F subject='Hello' -F text='Testing it all' -F html='x' -F var='name:Haley,accounts:Home (Apt);Auto (Scion xB);Misc. (Music equipment)'
+curl -v http://wap05:9000/messages -F from=mistuart@corelogic.com -F to=mistuart@corelogic.com -F subject='Hello' -F text='Hello %s, Your accounts: %s. Thanks CoreLogic Tax' -F var='name:Haley,accounts:Home (Apt);Auto (Scion xB);Misc. (Music equipment)'
